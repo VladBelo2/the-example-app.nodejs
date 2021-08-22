@@ -6,7 +6,9 @@ pipeline {
         {
             steps
             {
+                nodejs(cacheLocationStrategy: workspace(), nodeJSInstallationName: 'node-lts') {
                 sh 'npm install'
+                }
             }
         }
 
@@ -14,7 +16,9 @@ pipeline {
         {
             steps
             {
+                nodejs(cacheLocationStrategy: workspace(), nodeJSInstallationName: 'node-lts') {
                 sh 'npm run test:unit'
+                }
             }
         }
 
