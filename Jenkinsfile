@@ -24,9 +24,8 @@ pipeline {
 
         stage("Upload Artifacts")
         {
-            steps
+           steps
             {
-                echo "skip"
                 echo "skip"
             }
         }
