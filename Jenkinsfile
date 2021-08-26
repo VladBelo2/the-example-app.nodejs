@@ -27,6 +27,7 @@ pipeline {
             steps
             {
                 echo "skip"
+                echo "skip"
             }
         }
 
